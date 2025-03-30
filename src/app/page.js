@@ -170,7 +170,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">About Us</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            NeoEarth is dedicated to providing eco-friendly solutions that enhance both your quality of life and the planet's health.
+            {`NeoEarth is dedicated to providing eco-friendly solutions that enhance both your quality of life and the planet's health.`}
           </p>
         </div>
       </section>
