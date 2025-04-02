@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./Button";
 
 function ProductCategory({ image, title, subtitle, products }) {
@@ -5,11 +6,15 @@ function ProductCategory({ image, title, subtitle, products }) {
       <section className="py-12 mt-16 ml-14 max-w-full rounded-lg border border-solid border-zinc-300 w-[1187px] max-md:pr-5 max-md:mt-10">
         <div className="flex gap-5 max-md:flex-col">
           <div className="w-[36%] max-md:ml-0 max-md:w-full">
-            <img
-              src={image}
-              className="object-contain mt-3 w-full aspect-[1.33] max-md:mt-10"
-              alt={title}
-            />
+            <div className="h-auto w-full">
+              <Image
+                src={image}
+                className="object-contain mt-3 aspect-[1.33] max-md:mt-10"
+                alt={title}
+                height={305}
+                width={406}
+              />
+            </div>
           </div>
   
           <div className="ml-5 w-[64%] max-md:ml-0 max-md:w-full">
@@ -39,10 +44,13 @@ function ProductCategory({ image, title, subtitle, products }) {
                             href="#"
                             className="flex overflow-hidden flex-col justify-center px-5 py-1.5 bg-stone-50"
                           >
-                            <img
+                            <div className="h-auto w-[124px]"></div>
+                            <Image
                               src={product.image}
-                              className="object-contain aspect-square w-[124px]"
+                              className="object-contain aspect-square"
                               alt={product.title}
+                              height={124}
+                              width={124}
                             />
                           </a>
                         )}
