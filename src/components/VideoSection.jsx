@@ -1,21 +1,28 @@
+import Image from "next/image";
+
 function VideoSection() {
     return (
         <section className="mt-16 max-w-full w-[1278px] max-md:mt-10">
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-[50%] max-md:ml-0 max-md:w-full">
-              <img
+              {/* <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1fee1af3fd84f68de51e722c4cccc554715b582?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0"
                 className="object-contain w-full aspect-[2.12] max-md:mt-3 max-md:max-w-full"
                 alt="Promotional image"
-              />
+              /> */}
+              <video width="800" className="h-[400px]" controls poster="/images/thumbnail.webp">
+                <source src="https://ds5e5and3r3r0.cloudfront.net/neonearth_stg/images/contentimages/images/NE-Homepage-Intro-Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
             <div className="ml-5 w-[50%] max-md:ml-0 max-md:w-full">
               <div className="flex relative flex-col items-center py-16 pr-5 pl-16 w-full text-3xl text-center min-h-[349px] max-md:px-5 max-md:mt-3 max-md:max-w-full">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/221088f79539fa1b3fb869e8635549234278460b?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0"
-                  className="object-cover absolute inset-0 size-full"
+                <Image
+                  src="/images/bg.webp"
+                  className="absolute inset-0 size-full !w-[50%] !left-[350px]"
                   alt="Background pattern"
+                  fill
                 />
 
                 <h2 className="relative self-start text-[32px] leading-tight text-black max-md:max-w-full ml-15">

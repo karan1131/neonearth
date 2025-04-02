@@ -3,7 +3,7 @@ import { footerSections, paymentMethods } from "@/constants";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="w-full">
           <div className="flex flex-col justify-center items-center self-stretch px-16 py-16 mt-16 w-full text-white bg-black border-t border-zinc-300 max-md:px-5 max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-wrap gap-5 justify-between items-start max-w-full w-full">
               {footerSections.map((section, index) => (
@@ -37,11 +37,15 @@ function Footer() {
                       >
                         {section.contact.email}
                       </a>
-                      <img
-                        src={section.contact.socialImage}
-                        className="object-contain mt-3 w-40 aspect-[4.72]"
-                        alt="Social media icons"
-                      />
+                      <div className="h-auto w-40">
+                        <Image
+                          src={section.contact.socialImage}
+                          className="object-contain mt-3 aspect-[4.72]"
+                          alt="Social media icons"
+                          height={100}
+                          width={200}
+                        />
+                      </div>
                       <a
                         href={`tel:${section.contact.phone.replace(/[^0-9]/g, "")}`}
                         className="self-start mt-3.5 text-sm"
@@ -77,32 +81,43 @@ function Footer() {
                 <div className="flex flex-auto gap-2 px-2.5">
                   <div className="flex text-xs text-stone-500">
                     <p className="grow my-auto max-md:-mr-0.5">Payment Methods</p>
-                    <img
-                      src={paymentMethods[0].image}
-                      className="object-contain shrink-0 aspect-[1.36] w-[45px]"
-                      alt="Payment method"
-                    />
+                    <div className="h-auto w-[45px] ml-2">
+                      <Image
+                        src={paymentMethods[0].image}
+                        className="object-contain shrink-0 aspect-[1.36] w-[45px]"
+                        alt="Payment method"
+                        height={100}
+                        width={100}
+                      />
+                    </div>
                   </div>
 
                   <div className="flex flex-auto gap-2">
                     {paymentMethods.slice(1).map((method, index) => (
-                      <img
-                        key={index}
-                        src={method.image}
-                        className="object-contain shrink-0 aspect-[1.36] w-[45px]"
-                        alt="Payment method"
-                      />
+                      <div className="h-auto w-[45px]" key={index}>
+                        <Image
+                          src={method.image}
+                          className="object-contain shrink-0 aspect-[1.36]"
+                          alt="Payment method"
+                          height={100}
+                          width={100}
+                        />
+                      </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="flex self-start text-xs text-stone-500">
                   <p className="grow self-end mt-3 max-md:-mr-0.5">Secured by</p>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e9dfa047c8e7e3ac4fd008c0ef643ee80eeed540?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0"
-                    className="object-contain shrink-0 aspect-[2.83] w-[68px]"
-                    alt="Security certification"
-                  />
+                  <div className="h-auto w-[68px] pl-2 pt-2">
+                    <Image
+                      src="/images/footer/norton.webp"
+                      className="object-contain shrink-0 aspect-[2.83]"
+                      alt="Security certification"
+                      height={100}
+                      width={100}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
