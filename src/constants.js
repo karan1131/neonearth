@@ -379,8 +379,7 @@ const footerSections = [
       title: "Get in touch",
       contact: {
         email: "wecare@neonearth.com",
-        socialImage:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/3532249dd1649a66c9f8da8197aaf05a7994e56e?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+        socialImage: "/images/footer/list.webp",
         phone: "(855) 349-6366",
       },
     },
@@ -388,28 +387,22 @@ const footerSections = [
 
   const paymentMethods = [
     {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/3ed2eb20e1ee9be99360631a9b1699743cdb252f?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+      image: "/images/footer/visa.webp",
     },
     {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0a5f69d83c50dea1d222c15e6996f509348ffdd6?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+      image: "/images/footer/master.webp",
     },
     {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/f06de7a991d80b18bb0dde4517213c31848ee5eb?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+      image: "/images/footer/discover.webp",
     },
     {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/23d45b72696ea0167affb525918b0640ee12541e?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+      image: "/images/footer/amex.webp",
     },
     {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/57df44350af659cb93d91c1a62bbd4a7385ab31f?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+      image: "/images/footer/paypal.webp",
     },
     {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0186d7269a486b0f5ace1930e9743720c44bb1d5?placeholderIfAbsent=true&apiKey=9cca53c711104d8a883accd5abcb4ae0",
+      image: "/images/footer/applepay.webp",
     },
 ];
 
