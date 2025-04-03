@@ -84,35 +84,35 @@ const features = [
 
 const products = [
     {
-      image:
-        "/images/products/1.webp",
+      image: "/images/products/1.webp",
       title: "Custom Wall Tapestry - Velvet Satin",
       price: "$17.96",
+      designImage: "/images/PDP/design/tapestry.webp"
     },
     {
-      image:
-        "/images/products/2.webp",
+      image: "/images/products/2.webp",
       title: "Photo Print - Framing",
       price: "$11.59",
+      designImage: "/images/PDP/design/frame.webp"
     },
     {
-      image:
-        "/images/products/3.webp",
+      image: "/images/products/3.webp",
       title: "Hanging Canvas - Natural",
       price: "$36.00",
+      designImage: "/images/PDP/design/wallArt.webp"
     },
     {
-      image:
-        "/images/products/4.webp",
+      image: "/images/products/4.webp",
       title: "Custom Square Throw Pillow - Velvet Satin",
       price: "$16.95",
       multiline: true,
+      designImage: "/images/PDP/design/pillow.webp"
     },
     {
-      image:
-        "/images/products/5.webp",
+      image: "/images/products/5.webp",
       title: "Custom Monogram Arm Tote Bag",
       price: "$27.50",
+      designImage: "/images/PDP/design/bag.webp"
     },
 ];
 
