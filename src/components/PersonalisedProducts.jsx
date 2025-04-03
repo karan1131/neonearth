@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "./Button";
 import { products } from "@/constants";
 import Link from "next/link";
+import OverlayCardImage from './OverlayCardImage';
 
 function PersonalisedProducts() {
   const [image, setImage] = useState(null);
@@ -30,13 +31,13 @@ function PersonalisedProducts() {
                   <Link href={`/product/${product.title}`}>
                     <div className="flex flex-col items-center w-full text-center max-md:mt-4">
                       <div className="w-full h-auto">
-                        <Image
-                          src={image ? product.designImage : product.image}
+                        {image ? <OverlayCardImage baseImage={product.designImage} uploadedImage={image} productType={product.type}/> : <Image
+                          src={product.image}
                           className="object-contain self-stretch rounded-md aspect-square"
                           alt={product.title}
                           height={219}
                           width={219}
-                        />
+                        />}
                       </div>
                       <p
                         className={`mt-${index === 0 ? "5" : "6"} text-sm ${product.multiline ? "leading-5" : ""} text-neutral-800`}
