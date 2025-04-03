@@ -11,6 +11,7 @@ import 'swiper/css/thumbs';
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import OverlayImage from './OverlayImage';
 
 function ProductSlider({uploadImage, setUploadImage}) {
 
@@ -36,7 +37,7 @@ function ProductSlider({uploadImage, setUploadImage}) {
                 className="mySwiper2"
             >
                 <SwiperSlide className='h-auto w-[100px]'>
-                    {uploadImage ? <img src="/images/PDP/design/bag.webp" /> : <img src="/images/PDP/design/tapestry.webp" />}
+                    {uploadImage ? <OverlayImage baseImage={"/images/PDP/design/tapestry.webp"} uploadedImage={uploadImage} thumb={false}/> : <img src="/images/PDP/design/tapestry.webp" />}
                 </SwiperSlide>
                 <SwiperSlide className='h-auto w-[100px]'>
                     <img src="/images/PDP/1.webp" />
@@ -65,7 +66,7 @@ function ProductSlider({uploadImage, setUploadImage}) {
                 // direction='vertical'
             >
                 <SwiperSlide className='h-auto w-[20px]'>
-                    {uploadImage ? <img src="/images/PDP/design/bag.webp" /> : <img src="/images/PDP/design/tapestry.webp" />}
+                    {uploadImage ? <OverlayImage baseImage={"/images/PDP/design/tapestry.webp"} uploadedImage={uploadImage} thumb={true}/> : <img src="/images/PDP/design/tapestry.webp" />}
                 </SwiperSlide>
                 <SwiperSlide className='h-auto w-[20px]'>
                     <img src="/images/PDP/1.webp" />
