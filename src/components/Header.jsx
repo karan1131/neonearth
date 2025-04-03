@@ -1,22 +1,25 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
     return (
         <header className="flex flex-col justify-center items-center self-stretch px-16 py-4 w-full max-md:px-5 max-md:max-w-full border-b border-b-[#dbdbdb]">
           <div className="flex flex-wrap gap-10 max-w-full w-[1266px]">
-            <div className="flex flex-wrap flex-auto gap-10 text-sm text-gray-500">
-              <div className="flex h-auto w-[180px]">
-              <Image
-                src="/images/retailer_site_logo.webp"
-                className="object-contain shrink-0 my-auto max-w-full aspect-[5.62]"
-                alt="Neon Earth logo"
-                height={100}
-                width={100}
-                layout="responsive"
-                sizes=""
-                priority={true}
-              />
-              </div>
+            <div className="flex flex-wrap flex-auto gap-10 text-sm text-gray-500 items-center">
+              <Link href={'/'}>
+                <div className="flex h-auto w-[180px]">
+                <Image
+                  src="/images/retailer_site_logo.webp"
+                  className="object-contain shrink-0 my-auto max-w-full aspect-[5.62]"
+                  alt="Neon Earth logo"
+                  height={100}
+                  width={100}
+                  layout="responsive"
+                  sizes=""
+                  priority={true}
+                />
+                </div>
+              </Link>
               <div className="flex flex-col grow shrink-0 justify-center rounded-md border-solid basis-0 border-[5px] border-zinc-100 w-fit max-md:max-w-full">
                 <div className="flex overflow-hidden flex-wrap gap-5 justify-between pl-3 bg-white rounded-none max-md:max-w-full">
                   <input className="my-auto" placeholder="Find What Brings You Joy" />
